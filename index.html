@@ -1,73 +1,132 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prachi Architect Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #333; color: white; padding: 2rem; text-align: center; }
-    section { padding: 2rem; }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1560185008-5a017dcd9522?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
-      color: white; height: 60vh;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #fff; color: #333; }
+    nav {
+      background: #111;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    .hero h1 { font-size: 3rem; }
-    .services ul { list-style: none; padding: 0; }
-    .services li { margin-bottom: 0.5rem; }
-    .portfolio img { width: 100%; max-width: 400px; margin: 1rem; }
-    footer { background: #222; color: white; text-align: center; padding: 1rem; }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+    header .content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px #000;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; }
+    header p { font-size: 1.5rem; }
+    section {
+      padding: 4rem 2rem;
+    }
+    .about, .projects, .gallery, .testimonials, .contact {
+      max-width: 1200px;
+      margin: auto;
+    }
+    .projects img, .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    .testimonial {
+      background: #f9f9f9;
+      padding: 2rem;
+      border-left: 5px solid #333;
+      margin-bottom: 1.5rem;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .social-icons i {
+      margin: 0 10px;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Prachi Architect Solutions</h1>
-    <p>Transforming Spaces, Elevating Experiences</p>
-  </header>
-
-  <section class="hero">
-    <h1>Designing Dreams</h1>
-    <p>Your partner in premium interior and architectural solutions.</p>
-  </section>
-
-  <section class="about">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>  <header>
+    <video autoplay muted loop>
+      <source src="https://cdn.coverr.co/videos/coverr-modern-architecture-5931/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>Prachi Architect Solutions</h1>
+      <p>Transforming Spaces, Creating Dreams</p>
+    </div>
+  </header>  <section id="about" class="about">
     <h2>About Us</h2>
-    <p>Prachi Architect Solutions is a leading design firm offering innovative architectural and interior design services across residential, commercial, and institutional spaces.</p>
-  </section>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Architectural Planning & Design</li>
-      <li>Interior Design & Space Planning</li>
-      <li>Renovation & Remodeling</li>
-      <li>Landscape Architecture</li>
-      <li>3D Visualization & Walkthroughs</li>
-      <li>Consulting & Project Supervision</li>
-    </ul>
-  </section>
-
-  <section class="portfolio">
-    <h2>Portfolio</h2>
-    <img src="https://source.unsplash.com/400x300/?interior,design" alt="Interior Design" />
-    <img src="https://source.unsplash.com/400x300/?architecture,building" alt="Architecture" />
-  </section>
-
-  <section class="contact">
+    <p>We are a team of creative architects and interior designers dedicated to creating exceptional spaces. With a blend of innovation and elegance, we turn your ideas into architectural masterpieces.</p>
+  </section>  <section id="projects" class="projects">
+    <h2>Our Projects</h2>
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project 1">
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Project 2">
+  </section>  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Gallery Image 1">
+    <img src="https://images.unsplash.com/photo-1588854337116-e7c03b36c87b" alt="Gallery Image 2">
+  </section>  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"Prachi Architect Solutions brought our vision to life with professionalism and creativity. Highly recommended!" – Mr. Ramesh Kulkarni</p>
+    </div>
+    <div class="testimonial">
+      <p>"They turned our house into a dream home with perfect interior touches." – Mrs. Shalini Mehta</p>
+    </div>
+  </section>  <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@prachiarchitects.com | Phone: +91-9876543210</p>
-    <form>
-      <input type="text" placeholder="Your Name" required><br><br>
-      <input type="email" placeholder="Your Email" required><br><br>
-      <textarea placeholder="Your Message" required></textarea><br><br>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Prachi Architect Solutions. All rights reserved.</p>
+    <p>Email: info@prachi-architect-solutions.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: 101 Design Street, Pune, India</p>
+  </section>  <footer>
+    <p>&copy; 2025 Prachi Architect Solutions | Designed with passion</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
   </footer>
 </body>
 </html>
